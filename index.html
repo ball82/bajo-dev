@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/animation.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/svg+xml" href="./icons/Favicon/bajo_dev_favicon.svg">
     
@@ -17,7 +18,7 @@
                     <img class="logo" src="./logo/bajo_dev_logo_animated.svg" alt="">
                     <h2>Joannis Ballos</h2>
                     <h1>FULL STACK DEVELOPER</h1>
-                    <div class="scroll-btn">&#8595;</div>
+                    <a class="scroll-btn" href="#whyMe">&#8595;</a>
                 </div>
                 <div class="hero-links">
                     <img src="./icons/email-button.png" alt="">
@@ -29,10 +30,10 @@
             <nav>
                 <img class="nav-logo" src="./logo/bajo_dev_logo_v3.svg" alt="">
                 <div class="nav-links">
-                    <a href="">Über mich</a>
-                    <a href="">Skills</a>
-                    <a href="">Projekte</a>
-                    <a href="">Kontakt</a>
+                    <a href="#whyMe">Über mich</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projekte</a>
+                    <a href="#contact">Kontakt</a>
                 </div>
                 <div class="lang-switcher">
                     <span>DE</span>
@@ -40,9 +41,52 @@
                 </div>
             </nav>
         </div>
-
-
     </div>
+
+    <section class="why-me" id="whyMe">
+
+        <h2 class="section-title">Warum ich</h2>
+
+        <div class="why-me-content">
+            <div class="why-me-left">
+                <img src="./icons/icon_location.png" alt="Location" class="location-icon">
+                <p class="typewriter-text"><span class="typewriter-static">Ich bin </span><span class="typewriter" id="typewriter"></span></p>
+            </div>
+            <article>
+                Ich bin Joannis Ballos, professioneller Fullstack Developer aus der Region Aarau. Durch meine langjährige Erfahrung in den Bereichen Bau,
+                Industrie und Technik habe ich gelernt, wie unterschiedlich Probleme in der echten Welt aussehen und wie man sie wirklich löst.
+                Dieses Wissen bringe ich heute direkt in meine Arbeit als Entwickler ein.
+                Ich verstehe die Prozesse hinter den Projekten, nicht nur den Code davor.
+            </article>
+        </div>
+
+    </section>
+
+    <section class="skills" id="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-content">
+            <div class="skills-grid">
+
+                <div class="skill-item"><img src="./icons/Skill Icon + Name (2).png" alt="HTML"></div>
+                <div class="skill-item"><img src="./icons/Skill Icon + Name (3).png" alt="CSS"></div>
+                <div class="skill-item"><img src="./icons/Skill Icon + Name (1).png" alt="JavaScript"></div>
+                <div class="skill-item"><img src="./icons/Skill Icon + Name (4).png" alt="REST-API"></div>
+                <div class="skill-item"><img src="./icons/Skill Icon + Name.png" alt="TypeScript"></div>
+                <div class="skill-item"><img src="./icons/Skill Icon + angular.png" alt="Angular"></div>
+                
+                <div class="skill-item skill-new-row"><img src="./icons/Skill Icon + Name (5).png" alt="Firebase"></div>
+                <div class="skill-item"><img src="./icons/Skill Icon + Name (6).png" alt="Git"></div>
+                <div class="skill-item"><img src="./icons/Skill Icon + Name (7).png" alt="Scrum"></div>
+                
+            </div>
+            <div class="skills-circle">
+                <p>Von der ersten Zeile bis zum fertigen Produkt denke ich in Lösungen, nicht in Problemen. Ob moderne Webanwendungen, durchdachte Backends oder pixel-perfekte Frontends, ich bringe Ideen zum Leben, die sich skalieren lassen.</p>
+            </div>
+        </div>
+
+    </section>
 
 
 </body>
