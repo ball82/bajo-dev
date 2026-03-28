@@ -90,9 +90,7 @@
 
 @media (max-width: 768px){
 
-    .portrait-photo {
-        height: 400px;
-    }
+
 
     .hero-header {
         flex-direction: column;
@@ -116,11 +114,44 @@
 }
 
 @media (max-width: 600px) {
+
+    .portrait-photo {
+        height: 400px;
+    }
+
+    .typewriter-text{
+        font-size: 1rem;
+    }
+
+     .skills-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav {
         display: none;
     }
 
     .hamburger {
         display: flex;
+    }
+    .why-me{
+        padding: 0 20px;
+    }
+
+     .skills-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-circle {
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+    }
+
+    .skills-circle p {
+        line-height: 0.9;
     }
 }
