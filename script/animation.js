@@ -1,3 +1,26 @@
+// Hamburger Menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+function openMenu() {
+    mobileMenu.classList.add('open');
+    mobileMenuOverlay.classList.add('open');
+}
+
+function closeMenu() {
+    mobileMenu.classList.remove('open');
+    mobileMenuOverlay.classList.remove('open');
+}
+
+hamburger.addEventListener('click', openMenu);
+mobileMenuClose.addEventListener('click', closeMenu);
+mobileMenuOverlay.addEventListener('click', closeMenu);
+mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+// Typewriter
         const phrases = ["in Aarau wohnhaft..", "Fullstack Developer..", "leidenschaftlicher Coder.."];
         let phraseIndex = 0;
         let charIndex = 0;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script/animation.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="icon" type="image/svg+xml" href="./icons/Favicon/bajo_dev_favicon.svg">
     
     <title>Bajo Dev</title>
@@ -40,6 +41,21 @@
                     <span >EN</span>
                 </div>
             </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Menü schließen">&#10005;</button>
+                <a href="#whyMe" class="mobile-nav-link">Über mich</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projekte</a>
+                <a href="#contact" class="mobile-nav-link">Kontakt</a>
+            </div>
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
         </div>
     </div>
 
