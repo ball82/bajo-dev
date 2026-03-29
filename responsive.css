@@ -64,6 +64,16 @@
         width: 3rem;
         height: 3rem;
     }
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .contact-left{
+        align-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 830px) {
@@ -86,6 +96,7 @@
         display: flex;
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 768px){
@@ -209,5 +220,21 @@
     .btn-primary{
         padding: 15px 20px;
     }
-    
+
+    .contact-form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+     .contact-form-row input, .contact-form-row textarea {
+        width: 100%;
+     }
+
+     .scroll-top-btn {
+        top: 100%;
+        align-content: center;
+        align-items: center;
+        right: auto;
+     }
+
 }
