@@ -190,5 +190,24 @@
         line-height: 0.9;
     }
 
+
+    .project-tab{
+        font-size: 0.9rem;
+        padding: 14px 15px;
+    }
+
+    .projects{
+        padding: 80px 10px;
+    }
+
+    .project-right {
+        width: 230px;
+    }
+    .project-screenshot {
+        height: 150px;
+    }
+    .btn-primary{
+        padding: 15px 20px;
+    }
     
 }

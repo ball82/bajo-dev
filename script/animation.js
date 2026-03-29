@@ -1,3 +1,13 @@
+// Project Tabs
+document.querySelectorAll('.project-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        document.querySelectorAll('.project-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.project-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.querySelectorAll('.project-panel')[tab.dataset.project].classList.add('active');
+    });
+});
+
 // Hamburger Menu
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
