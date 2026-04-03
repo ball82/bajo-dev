@@ -55,6 +55,8 @@ const translations = {
     'label-message': 'Your Message',
     'privacy-text':  'I\'ve read the <a href="#" id="openPrivacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.',
     'btn-send':      'Send',
+    'form-success':  'Ihre Nachricht wurde erfolgreich gesendet!',
+    'form-error':    'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
     'footer-legal':  'Legal notice',
   },
 
@@ -114,6 +116,8 @@ const translations = {
     'label-message': 'Your Message',
     'privacy-text':  'I\'ve read the <a href="#" id="openPrivacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.',
     'btn-send':      'Send',
+    'form-success':  'Your message has been sent successfully!',
+    'form-error':    'Something went wrong. Please try again.',
     'footer-legal':  'Legal notice',
   }
 };

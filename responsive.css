@@ -231,12 +231,7 @@
      }
 
      .scroll-top-btn {
-        top: 95%;
-        align-content: center;
-        align-items: center;
-        right: auto;
-        width: 36px;
-        height: 60px;
+        display: none;
      }
 
 
