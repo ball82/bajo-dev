@@ -10,14 +10,14 @@ const translations = {
     'about-text': 'Ich bin Joannis Ballos, professioneller Fullstack Developer aus der Region Aarau. Durch meine langjährige Erfahrung in den Bereichen Bau, Industrie und Technik habe ich gelernt, wie unterschiedlich Probleme in der echten Welt aussehen und wie man sie wirklich löst. Dieses Wissen bringe ich heute direkt in meine Arbeit als Entwickler ein. Ich verstehe die Prozesse hinter den Projekten, nicht nur den Code davor.',
 
     'section-skills':    'Meine Skills',
-    'skills-circle-text': 'Von der ersten Zeile bis zum fertigen Produkt denke ich in Lösungen, nicht in Problemen. Ob moderne Webanwendungen, durchdachte Backends oder pixel-perfekte Frontends, ich bringe Ideen zum Leben, die sich skalieren lassen.',
+    'skills-circle-text': 'Ich arbeite mich von der ersten Zeile bis zum fertigen Produkt durch – egal ob Frontend, Backend oder beides. Wichtig ist mir dabei sauberer Code, der auch in sechs Monaten noch verständlich ist.',
 
     'section-projects': 'Meine Projekte',
     'tab-4': '4. Bestell App',
 
     // El Pollo Loco
     'p0-h1': 'Über das Projekt <span class="project-duration">Dauer: 4 Wochen</span>',
-    'p0-p1': 'Ein Jump-and-Run-Spiel, das nicht nur Kinderherzen höher schlagen lässt. Als Entwickler hinter der Action steuere ich die gesamte Spiellogik und setze dabei fortgeschrittene Konzepte wie objektorientierte Programmierung konsequent ein.',
+    'p0-p1': 'Ein klassisches Jump-and-Run in purem JavaScript. Die komplette Spiellogik – Steuerung, Animationen, Kollisionen und Gegner – habe ich selbst aufgebaut und dabei objektorientierte Programmierung durchgehend eingesetzt.',
     'p0-h2': 'Meine Arbeitsorganisation',
     'p0-p2': 'Saubere, wartbare Code-Struktur durch modulare Klassen und klare Verantwortlichkeiten. Regelmässige Commits und strukturiertes Vorgehen nach Spielmechaniken.',
     'p0-h3': 'Meine Erfahrung',
@@ -33,7 +33,7 @@ const translations = {
 
     // Pokédex
     'p2-h1': 'Über das Projekt <span class="project-duration">Dauer: 2 Wochen</span>',
-    'p2-p1': 'Ein Pokémon-Trainer-Register, das über eine externe API Pokémon-Eigenschaften abruft und übersichtlich darstellt. Ein Projekt, das Kindheitserinnerungen weckt und dabei moderne API-Integration zeigt.',
+    'p2-p1': 'Eine Pokédex-App, die Daten direkt von der PokéAPI lädt und übersichtlich darstellt. Der Fokus lag auf sauberem Umgang mit externen APIs und asynchronem JavaScript.',
     'p2-h2': 'Meine Arbeitsorganisation',
     'p2-p2': 'Klare Trennung von API-Logik und UI. Saubere Fehlerbehandlung bei asynchronen Anfragen und übersichtliche Komponentenstruktur.',
     'p2-h3': 'Meine Erfahrung',
@@ -41,7 +41,7 @@ const translations = {
 
     // Bestell App
     'p3-h1': 'Über das Projekt <span class="project-duration">Dauer: 2 Wochen</span>',
-    'p3-p1': 'Eine Bestell-App, die das Leben von Nichtköchen erleichtert. Mit Warenkorb-Logik und komplexen Geschäftslogiken werden JavaScript-Skills auf ein neues Level gehoben.',
+    'p3-p1': 'Eine Food-Bestellapp mit Warenkorb, Menüverwaltung und Bestellübersicht – alles in Vanilla JavaScript. Der Fokus lag auf klarer Datenstruktur und einer logisch aufgebauten UI.',
     'p3-h2': 'Meine Arbeitsorganisation',
     'p3-p2': 'Modularer Aufbau mit getrennter Logik für Warenkorb, Bestellverwaltung und UI-Rendering. Klare Datenstrukturen für Menü und Bestellstatus.',
     'p3-h3': 'Meine Erfahrung',
@@ -49,7 +49,7 @@ const translations = {
 
     // Contact
     'contact-title': 'Contact me',
-    'contact-text': 'Haben Sie Interesse an einer Zusammenarbeit oder möchten Sie mehr über meine Arbeit erfahren? Ich freue mich auf Ihre Nachricht – ob Jobangebot, Projektanfrage oder einfach ein erstes Kennenlernen.',
+    'contact-text': 'Sie haben ein Projekt, eine Idee oder einfach eine Frage? Schreiben Sie mir – ich antworte in der Regel innerhalb von 24 Stunden.',
     'label-name':    'Your name',
     'label-email':   'Your Email',
     'label-message': 'Your Message',
@@ -71,14 +71,14 @@ const translations = {
     'about-text': 'I am Joannis Ballos, a professional full-stack developer from the Aarau region. Through years of experience in construction, industry, and engineering, I have learned to recognise how diverse real-world problems can be — and how to truly solve them. I bring this knowledge directly into my work as a developer. I understand the processes behind the projects, not just the code in front of them.',
 
     'section-skills':    'My Skills',
-    'skills-circle-text': 'From the first line of code to the finished product, I think in solutions, not problems. Whether modern web applications, well-thought-out backends, or pixel-perfect frontends — I bring ideas to life that are built to scale.',
+    'skills-circle-text': 'I work through a project from the first line to the finished product — frontend, backend, or both. What matters to me is clean code that\'s still readable six months down the line.',
 
     'section-projects': 'My Projects',
     'tab-4': '4. Order App',
 
     // El Pollo Loco
     'p0-h1': 'About the Project <span class="project-duration">Duration: 4 weeks</span>',
-    'p0-p1': 'A jump-and-run game that doesn\'t just make kids\' hearts race. As the developer behind the action, I control the entire game logic and consistently apply advanced concepts such as object-oriented programming.',
+    'p0-p1': 'A classic jump-and-run game built in pure JavaScript. I built the entire game logic myself — controls, animations, collision detection, and enemies — applying object-oriented programming throughout.',
     'p0-h2': 'My Work Organisation',
     'p0-p2': 'Clean, maintainable code structure through modular classes and clear responsibilities. Regular commits and a structured approach organised by game mechanics.',
     'p0-h3': 'My Experience',
@@ -94,7 +94,7 @@ const translations = {
 
     // Pokédex
     'p2-h1': 'About the Project <span class="project-duration">Duration: 2 weeks</span>',
-    'p2-p1': 'A Pokémon trainer register that fetches and displays Pokémon attributes via an external API. A project that brings back childhood memories while showcasing modern API integration.',
+    'p2-p1': 'A Pokédex app that fetches data directly from the PokéAPI and displays it clearly. The focus was on clean handling of external APIs and asynchronous JavaScript.',
     'p2-h2': 'My Work Organisation',
     'p2-p2': 'Clear separation of API logic and UI. Clean error handling for asynchronous requests and a well-structured component layout.',
     'p2-h3': 'My Experience',
@@ -102,7 +102,7 @@ const translations = {
 
     // Order App
     'p3-h1': 'About the Project <span class="project-duration">Duration: 2 weeks</span>',
-    'p3-p1': 'An ordering app that makes life easier for non-cooks. With cart logic and complex business rules, JavaScript skills are taken to the next level.',
+    'p3-p1': 'A food ordering app with cart, menu management, and order overview — all in Vanilla JavaScript. The focus was on a clear data structure and a logically built UI.',
     'p3-h2': 'My Work Organisation',
     'p3-p2': 'Modular structure with separate logic for cart, order management, and UI rendering. Clear data structures for menu items and order status.',
     'p3-h3': 'My Experience',
@@ -110,7 +110,7 @@ const translations = {
 
     // Contact
     'contact-title': 'Contact me',
-    'contact-text': 'Interested in working together or want to learn more about my work? I look forward to hearing from you — whether it\'s a job offer, a project inquiry, or simply a first introduction.',
+    'contact-text': 'Got a project, an idea, or just a question? Write to me — I usually reply within 24 hours.',
     'label-name':    'Your name',
     'label-email':   'Your Email',
     'label-message': 'Your Message',
