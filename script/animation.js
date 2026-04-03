@@ -31,7 +31,7 @@ mobileMenuOverlay.addEventListener('click', closeMenu);
 mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
 
 // Typewriter
-        const phrases = ["in Aarau wohnhaft..", "Fullstack Developer..", "leidenschaftlicher Coder.."];
+        let phrases = ["in Aarau wohnhaft..", "Fullstack Developer..", "leidenschaftlicher Coder.."];
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -58,3 +58,10 @@ mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
             setTimeout(type, isDeleting ? 60 : 100);
         }
         type();
+
+        window.updateTypewriterPhrases = function(newPhrases) {
+            phrases = newPhrases;
+            phraseIndex = 0;
+            charIndex = 0;
+            isDeleting = false;
+        };

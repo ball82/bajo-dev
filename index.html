@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script/animation.js" defer></script>
+    <script src="./english_version.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
     <link rel="icon" type="image/svg+xml" href="./icon/Favicon/bajo_dev_favicon.svg">
@@ -21,19 +22,19 @@
                     <a class="scroll-btn" href="#whyMe"><img src="./icon/Arrow down.svg" alt="Scroll Down"></a>
                 </div>
                 <div class="hero-links">
-                    <img src="./icon/mail.svg" alt="">
-                    <img src="./icon/github.svg" alt="">
-                    <img src="./icon/linkedin.svg" alt="">
+                    <a href="mailto::mail@bajo-dev.ch"><img src="./icon/mail.svg" alt="Mail"></a>
+                    <a href="https://github.com/ball82" target="_blank" rel="noopener noreferrer"><img src="./icon/github.svg" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/joannis-ballos-8b3473276/" target="_blank" rel="noopener noreferrer"><img src="./icon/linkedin.svg" alt="LinkedIn"></a>
                 </div>
             </div>
 
             <nav>
                 <img class="nav-logo" src="./logo/bajo_dev_logo_v3.svg" alt="">
                 <div class="nav-links">
-                    <a href="#whyMe">Über mich</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projekte</a>
-                    <a href="#contact">Kontakt</a>
+                    <a href="#whyMe" data-i18n="nav-about">Über mich</a>
+                    <a href="#skills" data-i18n="nav-skills">Skills</a>
+                    <a href="#projects" data-i18n="nav-projects">Projekte</a>
+                    <a href="#contact" data-i18n="nav-contact">Kontakt</a>
                 </div>
                 <div class="lang-switcher">
                     <span class="active">DE</span>
@@ -49,24 +50,24 @@
 
             <div class="mobile-menu" id="mobileMenu">
                 <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Menü schließen">&#10005;</button>
-                <a href="#whyMe" class="mobile-nav-link">Über mich</a>
-                <a href="#skills" class="mobile-nav-link">Skills</a>
-                <a href="#projects" class="mobile-nav-link">Projekte</a>
-                <a href="#contact" class="mobile-nav-link">Kontakt</a>
+                <a href="#whyMe" class="mobile-nav-link" data-i18n="nav-about">Über mich</a>
+                <a href="#skills" class="mobile-nav-link" data-i18n="nav-skills">Skills</a>
+                <a href="#projects" class="mobile-nav-link" data-i18n="nav-projects">Projekte</a>
+                <a href="#contact" class="mobile-nav-link" data-i18n="nav-contact">Kontakt</a>
             </div>
             <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
         </div>
 
     <section class="why-me" id="whyMe">
 
-        <h2 class="section-title">Warum ich</h2>
+        <h2 class="section-title" data-i18n="section-why-me">Warum ich</h2>
 
         <div class="why-me-content">
             <div class="why-me-left">
                 <img src="./icon/location.svg" alt="Location" class="location-icon">
-                <p class="typewriter-text"><span class="typewriter-static">Ich bin </span><span class="typewriter" id="typewriter"></span></p>
+                <p class="typewriter-text"><span class="typewriter-static" data-i18n="typewriter-static">Ich bin </span><span class="typewriter" id="typewriter"></span></p>
             </div>
-            <article>
+            <article data-i18n="about-text">
                 Ich bin Joannis Ballos, professioneller Fullstack Developer aus der Region Aarau. Durch meine langjährige Erfahrung in den Bereichen Bau,
                 Industrie und Technik habe ich gelernt, wie unterschiedlich Probleme in der echten Welt aussehen und wie man sie wirklich löst.
                 Dieses Wissen bringe ich heute direkt in meine Arbeit als Entwickler ein.
@@ -78,7 +79,7 @@
 
     <section class="skills" id="skills">
 
-        <h2 class="section-title">Meine Skills</h2>
+        <h2 class="section-title" data-i18n="section-skills">Meine Skills</h2>
 
         <div class="skills-content">
             <div class="skills-grid">
@@ -97,7 +98,7 @@
                 
             </div>
             <div class="skills-circle">
-                <p>Von der ersten Zeile bis zum fertigen Produkt denke ich in Lösungen, nicht in Problemen. Ob moderne Webanwendungen, durchdachte Backends oder pixel-perfekte Frontends, ich bringe Ideen zum Leben, die sich skalieren lassen.</p>
+                <p data-i18n="skills-circle-text">Von der ersten Zeile bis zum fertigen Produkt denke ich in Lösungen, nicht in Problemen. Ob moderne Webanwendungen, durchdachte Backends oder pixel-perfekte Frontends, ich bringe Ideen zum Leben, die sich skalieren lassen.</p>
             </div>
         </div>
 
@@ -105,13 +106,13 @@
 
     <section class="projects" id="projects">
 
-        <h2 class="section-title">Meine Projekte</h2>
+        <h2 class="section-title" data-i18n="section-projects">Meine Projekte</h2>
 
         <div class="project-tabs">
             <button class="project-tab active" data-project="0">1. El Pollo Loco</button>
             <button class="project-tab" data-project="1">2. Join</button>
             <button class="project-tab" data-project="2">3. Pokédex</button>
-            <button class="project-tab" data-project="3">4. Bestell App</button>
+            <button class="project-tab" data-project="3" data-i18n="tab-4">4. Bestell App</button>
         </div>
 
         <div class="project-panels">
@@ -122,22 +123,22 @@
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Über das Projekt <span class="project-duration">Dauer: 4 Wochen</span></h3>
-                            <p>Ein Jump-and-Run-Spiel, das nicht nur Kinderherzen höher schlagen lässt. Als Entwickler hinter der Action steuere ich die gesamte Spiellogik und setze dabei fortgeschrittene Konzepte wie objektorientierte Programmierung konsequent ein.</p>
+                            <h3 data-i18n="p0-h1">Über das Projekt <span class="project-duration">Dauer: 4 Wochen</span></h3>
+                            <p data-i18n="p0-p1">Ein Jump-and-Run-Spiel, das nicht nur Kinderherzen höher schlagen lässt. Als Entwickler hinter der Action steuere ich die gesamte Spiellogik und setze dabei fortgeschrittene Konzepte wie objektorientierte Programmierung konsequent ein.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Arbeitsorganisation</h3>
-                            <p>Saubere, wartbare Code-Struktur durch modulare Klassen und klare Verantwortlichkeiten. Regelmässige Commits und strukturiertes Vorgehen nach Spielmechaniken.</p>
+                            <h3 data-i18n="p0-h2">Meine Arbeitsorganisation</h3>
+                            <p data-i18n="p0-p2">Saubere, wartbare Code-Struktur durch modulare Klassen und klare Verantwortlichkeiten. Regelmässige Commits und strukturiertes Vorgehen nach Spielmechaniken.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Erfahrung</h3>
-                            <p>Einzelprojekt. Eigenverantwortliche Umsetzung der kompletten Spiellogik, von Charakter-Steuerung über Kollisionserkennung bis hin zu Gegner-KI.</p>
+                            <h3 data-i18n="p0-h3">Meine Erfahrung</h3>
+                            <p data-i18n="p0-p3">Einzelprojekt. Eigenverantwortliche Umsetzung der kompletten Spiellogik, von Charakter-Steuerung über Kollisionserkennung bis hin zum Endboss.</p>
                         </div>
                     </div>
                 </div>
@@ -145,13 +146,15 @@
                     <div class="project-tech">
                         <p>Technologies</p>
                         <div class="project-tech-icons">
-                            <img src="./icon/Javascript.svg" alt="JavaScript">
+                            <img src="./icon/html.svg" alt="HTML">
+                            <img src="./icon/Vector.svg" alt="CSS">
+                            <img src="./icon/javascript.svg" alt="JavaScript">
                         </div>
                     </div>
                     <div class="project-screenshot"><img src="./icon/poject_img/elpolloloco.png" alt="El Pollo Loco Screenshot"></div>
                     <div class="project-btns">
                         <a class="btn-primary" target="_blank" href="http://elpolloloco.bajo-dev.ch">Live Test</a>
-                        <a class="btn-secondary" target="_blank" href="#">GitHub</a>
+                        <a class="btn-secondary" target="_blank" href="https://github.com/ball82/El-Pollo-Loco">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -162,22 +165,22 @@
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Über das Projekt <span class="project-duration">Dauer: 6 Wochen</span></h3>
-                            <p>Gemeinsam mit anderen Teilnehmern entwickelt — ein Projektmanagement-Tool, das den Status und die Verantwortlichkeiten von Aufgaben übersichtlich visualisiert. Gebaut mit HTML, CSS, JavaScript, Git und Firebase.</p>
+                            <h3 data-i18n="p1-h1">Über das Projekt <span class="project-duration">Dauer: 6 Wochen</span></h3>
+                            <p data-i18n="p1-p1">Gemeinsam mit 2 anderen Teilnehmern entwickelt — ein Projektmanagement-Tool, das den Status und die Verantwortlichkeiten von Aufgaben übersichtlich visualisiert. Gebaut mit HTML, CSS, JavaScript, Git und Firebase.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Arbeitsorganisation</h3>
-                            <p>Arbeit in klar definierten Feature-Branches, regelmässige Code-Reviews im Team und strukturierte Aufgabenverteilung über ein Kanban-Board.</p>
+                            <h3 data-i18n="p1-h2">Meine Arbeitsorganisation</h3>
+                            <p data-i18n="p1-p2">Arbeit in klar definierten Feature-Branches, regelmässige Code-Reviews im Team und strukturierte Aufgabenverteilung über ein Kanban-Board.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Erfahrung</h3>
-                            <p>Gruppenprojekt mit 3 Entwicklern. Zuständig für das Board-Feature, Drag & Drop sowie die Firebase-Datenbankanbindung.</p>
+                            <h3 data-i18n="p1-h3">Meine Erfahrung</h3>
+                            <p data-i18n="p1-p3">Gruppenprojekt mit 2 Entwicklern. Zuständig für das Board-Feature, Drag & Drop sowie die Firebase-Datenbankanbindung.</p>
                         </div>
                     </div>
                 </div>
@@ -186,6 +189,7 @@
                         <p>Technologies</p>
                         <div class="project-tech-icons">
                             <img src="./icon/html.svg" alt="HTML">
+                            <img src="./icon/Vector.svg" alt="HTML">
                             <img src="./icon/Javascript.svg" alt="JavaScript">
                             <img src="./icon/firebase.svg" alt="Firebase">
                         </div>
@@ -204,22 +208,22 @@
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Über das Projekt <span class="project-duration">Dauer: 2 Wochen</span></h3>
-                            <p>Ein Pokémon-Trainer-Register, das über eine externe API Pokémon-Eigenschaften abruft und übersichtlich darstellt. Ein Projekt, das Kindheitserinnerungen weckt und dabei moderne API-Integration zeigt.</p>
+                            <h3 data-i18n="p2-h1">Über das Projekt <span class="project-duration">Dauer: 2 Wochen</span></h3>
+                            <p data-i18n="p2-p1">Ein Pokémon-Trainer-Register, das über eine externe API Pokémon-Eigenschaften abruft und übersichtlich darstellt. Ein Projekt, das Kindheitserinnerungen weckt und dabei moderne API-Integration zeigt.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Arbeitsorganisation</h3>
-                            <p>Klare Trennung von API-Logik und UI. Saubere Fehlerbehandlung bei asynchronen Anfragen und übersichtliche Komponentenstruktur.</p>
+                            <h3 data-i18n="p2-h2">Meine Arbeitsorganisation</h3>
+                            <p data-i18n="p2-p2">Klare Trennung von API-Logik und UI. Saubere Fehlerbehandlung bei asynchronen Anfragen und übersichtliche Komponentenstruktur.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Erfahrung</h3>
-                            <p>Einzelprojekt. Vollständige Umsetzung von API-Integration, Datendarstellung und responsivem Design.</p>
+                            <h3 data-i18n="p2-h3">Meine Erfahrung</h3>
+                            <p data-i18n="p2-p3">Einzelprojekt. Vollständige Umsetzung von API-Integration, Datendarstellung und responsivem Design.</p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +231,9 @@
                     <div class="project-tech">
                         <p>Technologies</p>
                         <div class="project-tech-icons">
-                            <img src="./icon/Javascript.svg" alt="JavaScript">§
+                            <img src="./icon/html.svg" alt="HTML">
+                            <img src="./icon/Vector.svg" alt="CSS">
+                            <img src="./icon/Javascript.svg" alt="JavaScript">
                             <img src="./icon/Api.svg" alt="API">
                         </div>
                     </div>
@@ -245,22 +251,22 @@
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Über das Projekt <span class="project-duration">Dauer: 2 Wochen</span></h3>
-                            <p>Eine Bestell-App, die das Leben von Nichtköchen erleichtert. Mit Warenkorb-Logik und komplexen Geschäftslogiken werden JavaScript-Skills auf ein neues Level gehoben.</p>
+                            <h3 data-i18n="p3-h1">Über das Projekt <span class="project-duration">Dauer: 2 Wochen</span></h3>
+                            <p data-i18n="p3-p1">Eine Bestell-App, die das Leben von Nichtköchen erleichtert. Mit Warenkorb-Logik und komplexen Geschäftslogiken werden JavaScript-Skills auf ein neues Level gehoben.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Arbeitsorganisation</h3>
-                            <p>Modularer Aufbau mit getrennter Logik für Warenkorb, Bestellverwaltung und UI-Rendering. Klare Datenstrukturen für Menü und Bestellstatus.</p>
+                            <h3 data-i18n="p3-h2">Meine Arbeitsorganisation</h3>
+                            <p data-i18n="p3-p2">Modularer Aufbau mit getrennter Logik für Warenkorb, Bestellverwaltung und UI-Rendering. Klare Datenstrukturen für Menü und Bestellstatus.</p>
                         </div>
                     </div>
                     <div class="project-point">
                         <span class="project-dot"></span>
                         <div>
-                            <h3>Meine Erfahrung</h3>
-                            <p>Einzelprojekt. Eigenverantwortliche Umsetzung der kompletten Bestell- und Warenkorb-Logik.</p>
+                            <h3 data-i18n="p3-h3">Meine Erfahrung</h3>
+                            <p data-i18n="p3-p3">Einzelprojekt. Eigenverantwortliche Umsetzung der kompletten Bestell- und Warenkorb-Logik.</p>
                         </div>
                     </div>
                 </div>
@@ -268,14 +274,15 @@
                     <div class="project-tech">
                         <p>Technologies</p>
                         <div class="project-tech-icons">
-                            <img src="./icon/Javascript.svg" alt="JavaScript">
                             <img src="./icon/html.svg" alt="HTML">
+                            <img src="./icon/Vector.svg" alt="CSS">
+                            <img src="./icon/Javascript.svg" alt="JavaScript">
                         </div>
                     </div>
                     <div class="project-screenshot"><img src="./icon/poject_img/bastell_app.png" alt="Bestell App"></div>
                     <div class="project-btns">
                         <a class="btn-primary" target="_blank" href="http://bestellApp.bajo-dev.ch">Live Test</a>
-                        <a class="btn-secondary" target="_blank" href="#">GitHub</a>
+                        <a class="btn-secondary" target="_blank" href="https://github.com/ball82/bestellApp">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -286,13 +293,13 @@
 
     <section class="contact" id="contact">
 
-        <h2 class="section-title">Contact me</h2>
+        <h2 class="section-title" data-i18n="contact-title">Contact me</h2>
 
         <a class="scroll-top-btn" href="#top">&#8593;</a>
 
         <div class="contact-content">
             <div class="contact-left">
-                <p>Haben Sie Interesse an einer Zusammenarbeit oder möchten Sie mehr über meine Arbeit erfahren? Ich freue mich auf Ihre Nachricht – ob Jobangebot, Projektanfrage oder einfach ein erstes Kennenlernen.</p>
+                <p data-i18n="contact-text">Haben Sie Interesse an einer Zusammenarbeit oder möchten Sie mehr über meine Arbeit erfahren? Ich freue mich auf Ihre Nachricht – ob Jobangebot, Projektanfrage oder einfach ein erstes Kennenlernen.</p>
                 <div class="contact-details">
                     <div class="contact-detail-item">
                         <img src="./icon/mail.svg" alt="E-Mail">
@@ -308,24 +315,24 @@
             <form class="contact-form" onsubmit="return false;">
                 <div class="contact-form-row">
                     <div class="contact-field">
-                        <label>Your name</label>
+                        <label data-i18n="label-name">Your name</label>
                         <input type="text" placeholder="">
                     </div>
                     <div class="contact-field">
-                        <label>Your Email</label>
+                        <label data-i18n="label-email">Your Email</label>
                         <input type="email" placeholder="">
                     </div>
                 </div>
                 <div class="contact-field">
-                    <label>Your Message</label>
+                    <label data-i18n="label-message">Your Message</label>
                     <textarea rows="6"></textarea>
                 </div>
                 <div class="contact-privacy">
                     <input type="checkbox" id="privacy">
-                    <label for="privacy">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</label>
+                    <label for="privacy" data-i18n="privacy-text">I've read the <a href="#" id="openPrivacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.</label>
                 </div>
                 <div class="contact-submit">
-                    <button type="submit">Send</button>
+                    <button type="submit" data-i18n="btn-send">Send</button>
                 </div>
             </form>
         </div>
@@ -334,16 +341,16 @@
 
     <footer>
         <div class="footer-left">
-            <a href="#" id="openImpressum">Legal notice</a>
+            <a href="#" id="openImpressum" data-i18n="footer-legal">Legal notice</a>
             <span>© Joannis Ballos 2025</span>
         </div>
         <div class="footer-center">
             <img src="./logo/bajo_dev_logo_v3.svg" alt="Bajo Dev Logo">
         </div>
         <div class="footer-right">
-            <a href="#"><img src="./icon/github.svg" alt="GitHub"></a>
-            <a href="mailto:mail@bajo-dev.ch"><img src="./icon/mail.svg" alt="E-Mail"></a>
-            <a href="#"><img src="./icon/linkedin.svg" alt="LinkedIn"></a>
+            <a href="mailto:mail@bajo-dev.ch"><img src="./icon/mail_dark.svg" alt="E-Mail"></a>
+            <a href="https://github.com/ball82" target="_blank" rel="noopener noreferrer"><img src="./icon/github_dark.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/joannis-ballos-8b3473276/" target="_blank" rel="noopener noreferrer"><img src="./icon/linkedin_dark.svg" alt="LinkedIn"></a>
         </div>
     </footer>
 

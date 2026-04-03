@@ -160,6 +160,10 @@ body {
     object-fit: contain;
 }
 
+.hero-links img:hover {
+    cursor: pointer;
+}
+
 /* Nav */
 nav {
     background-color: #a8bfce;
@@ -187,11 +191,20 @@ nav {
     font-family: 'Anta', sans-serif;
 }
 
+.nav-links a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .lang-switcher {
     display: flex;
     gap: 8px;
     color: #1a2530;
     font-size: 1rem;
+}
+.lang-switcher :hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .lang-switcher .active {
@@ -690,9 +703,12 @@ footer {
     display: flex;
     gap: 16px;
     align-items: center;
+    
 }
 
 .footer-right img {
+    background-color: transparent;
+    color: #1a2530;
     width: 30px;
     height: 30px;
     object-fit: contain;

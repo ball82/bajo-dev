@@ -51,6 +51,35 @@ const impressumTemplate = `
 
             <h3>Urheberrechte</h3>
             <p>Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website gehören ausschliesslich dem Betreiber oder den speziell genannten Rechteinhabern.</p>
+
+            <h2 id="datenschutz">Datenschutzerklärung</h2>
+            <p>Angaben gemäss Schweizer Datenschutzgesetz (DSG)</p>
+
+            <h3>Verantwortliche Stelle</h3>
+            <p>Joannis Ballos<br>
+            Oltnerstrasse 48<br>
+            5012 Schönenwerd<br>
+            E-Mail: <a href="mailto:mail@bajo-dev.ch">mail@bajo-dev.ch</a></p>
+
+            <h3>Welche Daten werden erhoben?</h3>
+            <p>Über das Kontaktformular werden folgende Daten erhoben, sofern Sie diese freiwillig angeben:</p>
+            <ul>
+                <li>Name</li>
+                <li>E-Mail-Adresse</li>
+                <li>Nachrichteninhalt</li>
+            </ul>
+
+            <h3>Zweck der Datenverarbeitung</h3>
+            <p>Die über das Kontaktformular übermittelten Daten werden ausschliesslich zur Beantwortung Ihrer Anfrage verwendet. Eine Weitergabe an Dritte findet nicht statt.</p>
+
+            <h3>Speicherdauer</h3>
+            <p>Ihre Daten werden nur so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage notwendig ist, oder soweit gesetzliche Aufbewahrungspflichten bestehen.</p>
+
+            <h3>Ihre Rechte</h3>
+            <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich dazu an: <a href="mailto:mail@bajo-dev.ch">mail@bajo-dev.ch</a></p>
+
+            <h3>Cookies & Tracking</h3>
+            <p>Diese Website verwendet keine Tracking-Cookies und keine externen Analyse-Tools. Es wird lediglich die gewählte Spracheinstellung lokal im Browser gespeichert (localStorage).</p>
         </div>
 
         <footer>
@@ -78,10 +107,26 @@ function closeImpressum() {
     document.body.style.overflow = '';
 }
 
-document.getElementById('openImpressum').addEventListener('click', (e) => {
-    e.preventDefault();
+function openImpressum(scrollToId) {
     impressumOverlay.classList.add('open');
     document.body.style.overflow = 'hidden';
+    if (scrollToId) {
+        setTimeout(() => {
+            const target = impressumOverlay.querySelector('#' + scrollToId);
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        }, 50);
+    }
+}
+window.openImpressum = openImpressum;
+
+document.getElementById('openImpressum').addEventListener('click', (e) => {
+    e.preventDefault();
+    openImpressum();
+});
+
+document.getElementById('openPrivacyPolicy').addEventListener('click', (e) => {
+    e.preventDefault();
+    openImpressum('datenschutz');
 });
 
 impressumOverlay.querySelector('#closeImpressum').addEventListener('click', closeImpressum);
