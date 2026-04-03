@@ -231,10 +231,59 @@
      }
 
      .scroll-top-btn {
-        top: 100%;
+        top: 95%;
         align-content: center;
         align-items: center;
         right: auto;
+        width: 36px;
+        height: 60px;
      }
 
+
+    .impressum-back {
+        display: block;
+    }
+
+    .impressum-nav {
+        padding: 16px 16px;    
+        justify-content: space-around;
+        
+    }
+
+    .impressum-nav .nav-links {
+        display: none;
+    }
+
+    .impressum-nav .impressum-close {
+        display: none;
+    }
+
+    .impressum-hamburger {
+        display: flex;
+    }
+
+    .impressum-content {
+        padding: 20px 20px 40px;
+    }
+
+    .impressum-content h1 {
+        font-size: 2rem;
+    }
+
+    .impressum-page footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .impressum-page .footer-left {
+        align-items: center;
+    }
+
+    .impressum-page .footer-right {
+        justify-content: center;
+    }
 }
+

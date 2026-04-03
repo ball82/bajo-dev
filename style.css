@@ -657,3 +657,158 @@ nav {
     font-size: 1rem;
     cursor: pointer;
 }
+
+/* Footer */
+footer {
+    background-color: #a8bfce;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 60px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #1a2530;
+    font-size: 0.9rem;
+}
+
+.footer-left a {
+    color: #1a2530;
+    text-decoration: none;
+}
+
+.footer-center img {
+    width: 100px;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+.footer-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+/* Impressum Overlay */
+.impressum-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background-color: #262e34;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.impressum-overlay.open {
+    transform: translateY(0);
+}
+
+.impressum-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.impressum-page footer {
+    flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
+}
+
+.impressum-nav {
+    background-color: #a8bfce;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.impressum-close {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #1a2530;
+    cursor: pointer;
+}
+
+.impressum-content {
+    flex: 1;
+    padding: 60px 80px;
+    color: white;
+    max-width: 900px;
+}
+
+.impressum-content h1 {
+    font-size: 3rem;
+    color: #a8bfce;
+    margin: 0 0 40px 0;
+}
+
+.impressum-content h2 {
+    font-size: 1.4rem;
+    color: #a8bfce;
+    margin: 0 0 6px 0;
+}
+
+.impressum-content h3 {
+    font-size: 1.1rem;
+    color: #a8bfce;
+    margin: 24px 0 6px 0;
+}
+
+.impressum-content p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #ccd6dd;
+    margin: 0 0 10px 0;
+}
+
+.impressum-content a {
+    color: #a8bfce;
+}
+
+.impressum-back {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    padding: 16px 20px 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.impressum-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.impressum-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #1a2530;
+    border-radius: 2px;
+}
