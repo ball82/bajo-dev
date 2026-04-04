@@ -48,16 +48,16 @@ const translations = {
     'p3-p3': 'Einzelprojekt. Eigenverantwortliche Umsetzung der kompletten Bestell- und Warenkorb-Logik.',
 
     // Contact
-    'contact-title': 'Contact me',
+    'contact-title': 'Kontaktieren Sie mich',
     'contact-text': 'Sie haben ein Projekt, eine Idee oder einfach eine Frage? Schreiben Sie mir – ich antworte in der Regel innerhalb von 24 Stunden.',
-    'label-name':    'Your name',
-    'label-email':   'Your Email',
-    'label-message': 'Your Message',
-    'privacy-text':  'I\'ve read the <a href="#" id="openPrivacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.',
-    'btn-send':      'Send',
+    'label-name':    'Ihr Name',
+    'label-email':   'Ihre E-Mail',
+    'label-message': 'Ihre Nachricht',
+    'privacy-text':  'Ich habe die <a href="#" id="openPrivacyPolicy">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.',
+    'btn-send':      'Senden',
     'form-success':  'Ihre Nachricht wurde erfolgreich gesendet!',
     'form-error':    'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
-    'footer-legal':  'Legal notice',
+    'footer-legal':  'Impressum',
   },
 
   en: {
@@ -167,7 +167,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const savedLang = localStorage.getItem('lang') || 'de';
-  if (savedLang !== 'de') {
-    applyLanguage(savedLang);
-  }
+  applyLanguage(savedLang);
 });

@@ -22,7 +22,7 @@
                     <a class="scroll-btn" href="#whyMe"><img src="./icon/Arrow down.svg" alt="Scroll Down"></a>
                 </div>
                 <div class="hero-links">
-                    <a href="mailto::mail@bajo-dev.ch"><img src="./icon/mail.svg" alt="Mail"></a>
+                    <a href="mailto:mail@bajo-dev.ch"><img src="./icon/mail.svg" alt="Mail"></a>
                     <a href="https://github.com/ball82" target="_blank" rel="noopener noreferrer"><img src="./icon/github.svg" alt="GitHub"></a>
                     <a href="https://www.linkedin.com/in/joannis-ballos-8b3473276/" target="_blank" rel="noopener noreferrer"><img src="./icon/linkedin.svg" alt="LinkedIn"></a>
                 </div>
@@ -54,6 +54,10 @@
                 <a href="#skills" class="mobile-nav-link" data-i18n="nav-skills">Skills</a>
                 <a href="#projects" class="mobile-nav-link" data-i18n="nav-projects">Projekte</a>
                 <a href="#contact" class="mobile-nav-link" data-i18n="nav-contact">Kontakt</a>
+                <div class="lang-switcher">
+                    <span class="active">DE</span>
+                    <span>EN</span>
+                </div>
             </div>
             <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
         </div>
@@ -151,9 +155,9 @@
                             <img src="./icon/Javascript.svg" alt="JavaScript">
                         </div>
                     </div>
-                    <div class="project-screenshot"><img src="./icon/poject_img/elpolloloco.png" alt="El Pollo Loco Screenshot"></div>
+                    <div class="project-screenshot"><img src="./icon/poject_img/elpolloloco_smal.jpg" alt="El Pollo Loco Screenshot"></div>
                     <div class="project-btns">
-                        <a class="btn-primary" target="_blank" href="http://elpolloloco.bajo-dev.ch">Live Test</a>
+                        <a class="btn-primary" target="_blank" href="https://elpolloloco.bajo-dev.ch">Live Test</a>
                         <a class="btn-secondary" target="_blank" href="https://github.com/ball82/El-Pollo-Loco">GitHub</a>
                     </div>
                 </div>
@@ -194,9 +198,9 @@
                             <img src="./icon/firebase.svg" alt="Firebase">
                         </div>
                     </div>
-                    <div class="project-screenshot"><img src="./icon/poject_img/join.png" alt="Join"></div>
+                    <div class="project-screenshot"><img src="./icon/poject_img/join_smal.jpg" alt="Join"></div>
                     <div class="project-btns">
-                        <a class="btn-primary" target="_blank" href="http://join.bajo-dev.ch">Live Test</a>
+                        <a class="btn-primary" target="_blank" href="https://join.bajo-dev.ch">Live Test</a>
                         <a class="btn-secondary" target="_blank" href="https://github.com/ball82/Join">GitHub</a>
                     </div>
                 </div>
@@ -237,9 +241,9 @@
                             <img src="./icon/Api.svg" alt="API">
                         </div>
                     </div>
-                    <div class="project-screenshot"><img src="./icon/poject_img/pokedex.png" alt="Pokédex Screenshot"></div>
+                    <div class="project-screenshot"><img src="./icon/poject_img/pokedex_smal.jpg" alt="Pokédex Screenshot"></div>
                     <div class="project-btns">
-                        <a class="btn-primary" target="_blank" href="http://pokedex.bajo-dev.ch">Live Test</a>
+                        <a class="btn-primary" target="_blank" href="https://pokedex.bajo-dev.ch">Live Test</a>
                         <a class="btn-secondary" target="_blank" href="https://github.com/ball82/pokeDex">GitHub</a>
                     </div>
                 </div>
@@ -279,9 +283,9 @@
                             <img src="./icon/Javascript.svg" alt="JavaScript">
                         </div>
                     </div>
-                    <div class="project-screenshot"><img src="./icon/poject_img/bastell_app.png" alt="Bestell App"></div>
+                    <div class="project-screenshot"><img src="./icon/poject_img/bastell_app_smal.jpg" alt="Bestell App"></div>
                     <div class="project-btns">
-                        <a class="btn-primary" target="_blank" href="http://bestellApp.bajo-dev.ch">Live Test</a>
+                        <a class="btn-primary" target="_blank" href="https://bestellApp.bajo-dev.ch">Live Test</a>
                         <a class="btn-secondary" target="_blank" href="https://github.com/ball82/bestellApp">GitHub</a>
                     </div>
                 </div>
@@ -293,7 +297,7 @@
 
     <section class="contact" id="contact">
 
-        <h2 class="section-title" data-i18n="contact-title">Contact me</h2>
+        <h2 class="section-title" data-i18n="contact-title">Kontaktieren Sie mich</h2>
 
         <a class="scroll-top-btn" href="#top">&#8593;</a>
 
@@ -315,27 +319,27 @@
             <form class="contact-form" id="contactForm" action="mail.php" method="POST">
                 <div class="contact-form-row">
                     <div class="contact-field">
-                        <label data-i18n="label-name">Your name</label>
+                        <label data-i18n="label-name">Ihr Name</label>
                         <input type="text" name="name" required placeholder="">
                     </div>
                     <div class="contact-field">
-                        <label data-i18n="label-email">Your Email</label>
+                        <label data-i18n="label-email">Ihre E-Mail</label>
                         <input type="email" name="email" required placeholder="">
                     </div>
                 </div>
                 <div class="contact-field">
-                    <label data-i18n="label-message">Your Message</label>
+                    <label data-i18n="label-message">Ihre Nachricht</label>
                     <textarea name="message" rows="6" required></textarea>
                 </div>
                 <div class="contact-privacy">
                     <input type="checkbox" id="privacy" required>
-                    <label for="privacy" data-i18n="privacy-text">I've read the <a href="#" id="openPrivacyPolicy">privacy policy</a> and agree to the processing of my data as outlined.</label>
+                    <label for="privacy" data-i18n="privacy-text">Ich habe die <a href="#" id="openPrivacyPolicy">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.</label>
                 </div>
                 <div class="contact-submit">
-                    <button type="submit" data-i18n="btn-send">Send</button>
+                    <button type="submit" data-i18n="btn-send">Senden</button>
                 </div>
-                <p class="form-success" id="formSuccess" style="display:none;" data-i18n="form-success">Your message has been sent successfully!</p>
-                <p class="form-error" id="formError" style="display:none;" data-i18n="form-error">Something went wrong. Please try again.</p>
+                <p class="form-success" id="formSuccess" style="display:none;" data-i18n="form-success">Ihre Nachricht wurde erfolgreich gesendet!</p>
+                <p class="form-error" id="formError" style="display:none;" data-i18n="form-error">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.</p>
             </form>
         </div>
 
@@ -343,8 +347,8 @@
 
     <footer>
         <div class="footer-left">
-            <a href="#" id="openImpressum" data-i18n="footer-legal">Legal notice</a>
-            <span>© Joannis Ballos 2025</span>
+            <a href="#" id="openImpressum" data-i18n="footer-legal">Impressum</a>
+            <span>© Joannis Ballos 2026</span>
         </div>
         <div class="footer-center">
             <img src="./logo/bajo_dev_logo_v3.svg" alt="Bajo Dev Logo">
