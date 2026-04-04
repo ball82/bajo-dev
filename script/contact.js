@@ -12,10 +12,18 @@ contactForm.addEventListener('submit', async (e) => {
     button.disabled = true;
 
     try {
+        const formData = new FormData(contactForm);
         const response = await fetch(contactForm.action, {
             method: 'POST',
-            body: new FormData(contactForm),
-            headers: { 'Accept': 'application/json' }
+            body: JSON.stringify({
+                name:    formData.get('name'),
+                email:   formData.get('email'),
+                message: formData.get('message'),
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            }
         });
 
         if (response.ok) {
