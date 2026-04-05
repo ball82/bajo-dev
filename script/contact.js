@@ -53,10 +53,20 @@ async function sendForm(formData) {
 }
 
 function showSuccess() {
-    document.getElementById('formSuccess').style.display = 'block';
     contactForm.reset();
     submitBtn.disabled = true;
+    document.getElementById('successDialog').classList.add('open');
 }
+
+document.getElementById('dialogCloseBtn').addEventListener('click', () => {
+    document.getElementById('successDialog').classList.remove('open');
+});
+
+document.getElementById('successDialog').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) {
+        document.getElementById('successDialog').classList.remove('open');
+    }
+});
 
 function showError() {
     document.getElementById('formError').style.display = 'block';

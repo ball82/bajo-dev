@@ -57,6 +57,9 @@ const translations = {
     'btn-send':      'Senden',
     'form-success':  'Ihre Nachricht wurde erfolgreich gesendet!',
     'form-error':    'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
+    'dialog-title':  'Nachricht gesendet!',
+    'dialog-text':   'Vielen Dank für Ihre Nachricht. Ich werde mich so bald wie möglich bei Ihnen melden.',
+    'dialog-btn':    'Schliessen',
     'footer-legal':  'Impressum',
 
     // Impressum & Datenschutz
@@ -148,6 +151,9 @@ const translations = {
     'btn-send':      'Send',
     'form-success':  'Your message has been sent successfully!',
     'form-error':    'Something went wrong. Please try again.',
+    'dialog-title':  'Message sent!',
+    'dialog-text':   'Thank you for your message. I will get back to you as soon as possible.',
+    'dialog-btn':    'Close',
     'footer-legal':  'Legal notice',
 
     // Impressum & Privacy Policy
