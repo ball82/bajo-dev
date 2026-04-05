@@ -58,6 +58,36 @@ const translations = {
     'form-success':  'Ihre Nachricht wurde erfolgreich gesendet!',
     'form-error':    'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
     'footer-legal':  'Impressum',
+
+    // Impressum & Datenschutz
+    'legal-title':          'Rechtliche Hinweise',
+    'imp-h-impressum':      'Impressum',
+    'imp-subtitle':         'Angaben gemäss Art. 3 Abs. 1 lit. s UWG',
+    'imp-operator-h':       'Betreiber der Website',
+    'imp-country':          'Schweiz',
+    'imp-contact-h':        'Kontakt',
+    'imp-disclaimer-h':     'Haftungsausschluss',
+    'imp-disclaimer-text':  'Die Inhalte unserer Seiten wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen entstanden sind, werden ausgeschlossen.',
+    'imp-links-h':          'Haftung für Links',
+    'imp-links-text':       'Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt.',
+    'imp-copyright-h':      'Urheberrechte',
+    'imp-copyright-text':   'Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website gehören ausschliesslich dem Betreiber oder den speziell genannten Rechteinhabern.',
+    'imp-h-privacy':        'Datenschutzerklärung',
+    'priv-subtitle':        'Angaben gemäss Schweizer Datenschutzgesetz (DSG)',
+    'priv-controller-h':    'Verantwortliche Stelle',
+    'priv-collected-h':     'Welche Daten werden erhoben?',
+    'priv-collected-text':  'Über das Kontaktformular werden folgende Daten erhoben, sofern Sie diese freiwillig angeben:',
+    'priv-collected-1':     'Name',
+    'priv-collected-2':     'E-Mail-Adresse',
+    'priv-collected-3':     'Nachrichteninhalt',
+    'priv-purpose-h':       'Zweck der Datenverarbeitung',
+    'priv-purpose-text':    'Die über das Kontaktformular übermittelten Daten werden ausschliesslich zur Beantwortung Ihrer Anfrage verwendet. Eine Weitergabe an Dritte findet nicht statt.',
+    'priv-retention-h':     'Speicherdauer',
+    'priv-retention-text':  'Ihre Daten werden nur so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage notwendig ist, oder soweit gesetzliche Aufbewahrungspflichten bestehen.',
+    'priv-rights-h':        'Ihre Rechte',
+    'priv-rights-text':     'Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich dazu an: <a href="mailto:mail@bajo-dev.ch">mail@bajo-dev.ch</a>',
+    'priv-cookies-h':       'Cookies & Tracking',
+    'priv-cookies-text':    'Diese Website verwendet keine Tracking-Cookies und keine externen Analyse-Tools. Es wird lediglich die gewählte Spracheinstellung lokal im Browser gespeichert (localStorage).',
   },
 
   en: {
@@ -119,6 +149,36 @@ const translations = {
     'form-success':  'Your message has been sent successfully!',
     'form-error':    'Something went wrong. Please try again.',
     'footer-legal':  'Legal notice',
+
+    // Impressum & Privacy Policy
+    'legal-title':          'Legal Notice',
+    'imp-h-impressum':      'Legal Notice',
+    'imp-subtitle':         'Information pursuant to Art. 3 Para. 1 lit. s UCA',
+    'imp-operator-h':       'Website Operator',
+    'imp-country':          'Switzerland',
+    'imp-contact-h':        'Contact',
+    'imp-disclaimer-h':     'Disclaimer',
+    'imp-disclaimer-text':  'The contents of our pages have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. Liability claims against the author arising from material or immaterial damage caused by the use or non-use of the published information are excluded.',
+    'imp-links-h':          'Liability for Links',
+    'imp-links-text':       'References and links to third-party websites are outside our area of responsibility. Any responsibility for such websites is rejected.',
+    'imp-copyright-h':      'Copyright',
+    'imp-copyright-text':   'The copyright and all other rights to content, images, photos, or other files on this website belong exclusively to the operator or the specifically named rights holders.',
+    'imp-h-privacy':        'Privacy Policy',
+    'priv-subtitle':        'Information pursuant to the Swiss Data Protection Act (DPA)',
+    'priv-controller-h':    'Data Controller',
+    'priv-collected-h':     'What data is collected?',
+    'priv-collected-text':  'The following data is collected via the contact form, provided you submit it voluntarily:',
+    'priv-collected-1':     'Name',
+    'priv-collected-2':     'Email address',
+    'priv-collected-3':     'Message content',
+    'priv-purpose-h':       'Purpose of Data Processing',
+    'priv-purpose-text':    'The data submitted via the contact form is used exclusively to respond to your enquiry. It will not be passed on to third parties.',
+    'priv-retention-h':     'Retention Period',
+    'priv-retention-text':  'Your data will only be stored for as long as necessary to process your enquiry, or as required by statutory retention obligations.',
+    'priv-rights-h':        'Your Rights',
+    'priv-rights-text':     'You have the right to access, rectification, deletion, and restriction of the processing of your personal data at any time. Please contact: <a href="mailto:mail@bajo-dev.ch">mail@bajo-dev.ch</a>',
+    'priv-cookies-h':       'Cookies & Tracking',
+    'priv-cookies-text':    'This website does not use tracking cookies or external analytics tools. Only the selected language setting is stored locally in the browser (localStorage).',
   }
 };
 
@@ -126,6 +186,19 @@ const typewriterPhrases = {
   de: ['in Aarau wohnhaft..', 'Fullstack Developer..', 'leidenschaftlicher Coder..'],
   en: ['based in Aarau..', 'Fullstack Developer..', 'a passionate coder..']
 };
+
+function translateElements(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const value = translations[lang]?.[el.dataset.i18n];
+    if (value !== undefined) el.innerHTML = value;
+  });
+}
+
+function updateLangSwitcher(lang) {
+  document.querySelectorAll('.lang-switcher span').forEach(span => {
+    span.classList.toggle('active', span.textContent.trim() === lang.toUpperCase());
+  });
+}
 
 function bindPrivacyLink() {
   const link = document.getElementById('openPrivacyPolicy');
@@ -138,34 +211,21 @@ function bindPrivacyLink() {
 }
 
 function applyLanguage(lang) {
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.dataset.i18n;
-    const value = translations[lang]?.[key];
-    if (value !== undefined) {
-      el.innerHTML = value;
-    }
-  });
+  translateElements(lang);
   bindPrivacyLink();
-
-  if (window.updateTypewriterPhrases) {
-    window.updateTypewriterPhrases(typewriterPhrases[lang]);
-  }
-
-  document.querySelectorAll('.lang-switcher span').forEach(span => {
-    span.classList.toggle('active', span.textContent.trim() === lang.toUpperCase());
-  });
-
+  if (window.updateTypewriterPhrases) window.updateTypewriterPhrases(typewriterPhrases[lang]);
+  updateLangSwitcher(lang);
   localStorage.setItem('lang', lang);
   document.documentElement.lang = lang;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initLangSwitcher() {
   document.querySelectorAll('.lang-switcher span').forEach(span => {
-    span.addEventListener('click', () => {
-      applyLanguage(span.textContent.trim().toLowerCase());
-    });
+    span.addEventListener('click', () => applyLanguage(span.textContent.trim().toLowerCase()));
   });
+}
 
-  const savedLang = localStorage.getItem('lang') || 'de';
-  applyLanguage(savedLang);
+document.addEventListener('DOMContentLoaded', () => {
+  initLangSwitcher();
+  applyLanguage(localStorage.getItem('lang') || 'de');
 });

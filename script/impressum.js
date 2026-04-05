@@ -1,106 +1,102 @@
 const impressumTemplate = `
     <div class="impressum-page">
         <nav class="impressum-nav">
-                    <button class="impressum-hamburger" id="impressumHamburger" aria-label="Menü öffnen">
+            <button class="impressum-hamburger" id="impressumHamburger" aria-label="Menü öffnen">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <img class="nav-logo" src="./logo/bajo_dev_logo_v3.svg" alt="">
             <div class="nav-links">
-                <a href="#whyMe" onclick="closeImpressum()">Über mich</a>
-                <a href="#skills" onclick="closeImpressum()">Skills</a>
-                <a href="#projects" onclick="closeImpressum()">Projekte</a>
-                <a href="#contact" onclick="closeImpressum()">Kontakt</a>
+                <a href="#whyMe" onclick="closeImpressum()" data-i18n="nav-about"></a>
+                <a href="#skills" onclick="closeImpressum()" data-i18n="nav-skills"></a>
+                <a href="#projects" onclick="closeImpressum()" data-i18n="nav-projects"></a>
+                <a href="#contact" onclick="closeImpressum()" data-i18n="nav-contact"></a>
             </div>
             <button class="impressum-close" id="closeImpressum">&#10005;</button>
-
         </nav>
 
         <div class="mobile-menu" id="impressumMobileMenu">
             <button class="mobile-menu-close" id="impressumMobileMenuClose">&#10005;</button>
-            <a href="#whyMe" class="mobile-nav-link impressum-mobile-link">Über mich</a>
-            <a href="#skills" class="mobile-nav-link impressum-mobile-link">Skills</a>
-            <a href="#projects" class="mobile-nav-link impressum-mobile-link">Projekte</a>
-            <a href="#contact" class="mobile-nav-link impressum-mobile-link">Kontakt</a>
+            <a href="#whyMe" class="mobile-nav-link impressum-mobile-link" data-i18n="nav-about"></a>
+            <a href="#skills" class="mobile-nav-link impressum-mobile-link" data-i18n="nav-skills"></a>
+            <a href="#projects" class="mobile-nav-link impressum-mobile-link" data-i18n="nav-projects"></a>
+            <a href="#contact" class="mobile-nav-link impressum-mobile-link" data-i18n="nav-contact"></a>
         </div>
         <div class="mobile-menu-overlay" id="impressumMobileOverlay"></div>
 
         <button class="impressum-back" id="impressumBack">&#8592;</button>
 
         <div class="impressum-content">
-            <h1>Legal Notice</h1>
+            <h1 data-i18n="legal-title"></h1>
 
-            <h2>Impressum</h2>
-            <p>Angaben gemäss Art. 3 Abs. 1 lit. s UWG</p>
+            <h2 data-i18n="imp-h-impressum"></h2>
+            <p data-i18n="imp-subtitle"></p>
 
-            <h3>Betreiber der Website</h3>
+            <h3 data-i18n="imp-operator-h"></h3>
             <p>Joannis Ballos<br>
             Oltnerstrasse 48<br>
             5012 Schönenwerd<br>
-            Schweiz</p>
+            <span data-i18n="imp-country"></span></p>
 
-            <h3>Kontakt</h3>
+            <h3 data-i18n="imp-contact-h"></h3>
             <p>E-Mail: <a href="mailto:mail@bajo-dev.ch">mail@bajo-dev.ch</a></p>
 
-            <h3>Haftungsausschluss</h3>
-            <p>Die Inhalte unserer Seiten wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen entstanden sind, werden ausgeschlossen.</p>
+            <h3 data-i18n="imp-disclaimer-h"></h3>
+            <p data-i18n="imp-disclaimer-text"></p>
 
-            <h3>Haftung für Links</h3>
-            <p>Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt.</p>
+            <h3 data-i18n="imp-links-h"></h3>
+            <p data-i18n="imp-links-text"></p>
 
-            <h3>Urheberrechte</h3>
-            <p>Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website gehören ausschliesslich dem Betreiber oder den speziell genannten Rechteinhabern.</p>
+            <h3 data-i18n="imp-copyright-h"></h3>
+            <p data-i18n="imp-copyright-text"></p>
 
-            <h2 id="datenschutz">Datenschutzerklärung</h2>
-            <p>Angaben gemäss Schweizer Datenschutzgesetz (DSG)</p>
+            <h2 id="datenschutz" data-i18n="imp-h-privacy"></h2>
+            <p data-i18n="priv-subtitle"></p>
 
-            <h3>Verantwortliche Stelle</h3>
+            <h3 data-i18n="priv-controller-h"></h3>
             <p>Joannis Ballos<br>
             Oltnerstrasse 48<br>
             5012 Schönenwerd<br>
             E-Mail: <a href="mailto:mail@bajo-dev.ch">mail@bajo-dev.ch</a></p>
 
-            <h3>Welche Daten werden erhoben?</h3>
-            <p>Über das Kontaktformular werden folgende Daten erhoben, sofern Sie diese freiwillig angeben:</p>
+            <h3 data-i18n="priv-collected-h"></h3>
+            <p data-i18n="priv-collected-text"></p>
             <ul>
-                <li>Name</li>
-                <li>E-Mail-Adresse</li>
-                <li>Nachrichteninhalt</li>
+                <li data-i18n="priv-collected-1"></li>
+                <li data-i18n="priv-collected-2"></li>
+                <li data-i18n="priv-collected-3"></li>
             </ul>
 
-            <h3>Zweck der Datenverarbeitung</h3>
-            <p>Die über das Kontaktformular übermittelten Daten werden ausschliesslich zur Beantwortung Ihrer Anfrage verwendet. Eine Weitergabe an Dritte findet nicht statt.</p>
+            <h3 data-i18n="priv-purpose-h"></h3>
+            <p data-i18n="priv-purpose-text"></p>
 
-            <h3>Speicherdauer</h3>
-            <p>Ihre Daten werden nur so lange gespeichert, wie es für die Bearbeitung Ihrer Anfrage notwendig ist, oder soweit gesetzliche Aufbewahrungspflichten bestehen.</p>
+            <h3 data-i18n="priv-retention-h"></h3>
+            <p data-i18n="priv-retention-text"></p>
 
-            <h3>Ihre Rechte</h3>
-            <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich dazu an: <a href="mailto:mail@bajo-dev.ch">mail@bajo-dev.ch</a></p>
+            <h3 data-i18n="priv-rights-h"></h3>
+            <p data-i18n="priv-rights-text"></p>
 
-            <h3>Cookies & Tracking</h3>
-            <p>Diese Website verwendet keine Tracking-Cookies und keine externen Analyse-Tools. Es wird lediglich die gewählte Spracheinstellung lokal im Browser gespeichert (localStorage).</p>
+            <h3 data-i18n="priv-cookies-h"></h3>
+            <p data-i18n="priv-cookies-text"></p>
         </div>
-
-        <footer>
-            <div class="footer-left">
-                <span id="closeImpressumFooter" style="cursor:pointer;">Legal notice</span>
-                <span>© Joannis Ballos 2025</span>
-            </div>
-            <div class="footer-center">
-                <img src="./logo/bajo_dev_logo_v3.svg" alt="Bajo Dev Logo">
-            </div>
-            <div class="footer-right">
-                <a href="#"><img src="./icon/github.svg" alt="GitHub"></a>
-                <a href="mailto:mail@bajo-dev.ch"><img src="./icon/mail.svg" alt="E-Mail"></a>
-                <a href="#"><img src="./icon/linkedin.svg" alt="LinkedIn"></a>
-            </div>
-        </footer>
     </div>
 `;
 
 const impressumOverlay = document.getElementById('impressumOverlay');
 impressumOverlay.innerHTML = impressumTemplate;
+
+function cloneFooter() {
+    const clone = document.querySelector('footer').cloneNode(true);
+    const link = clone.querySelector('#openImpressum');
+    if (link) {
+        link.removeAttribute('id');
+        link.addEventListener('click', (e) => { e.preventDefault(); closeImpressum(); });
+    }
+    impressumOverlay.querySelector('.impressum-page').appendChild(clone);
+}
+
+cloneFooter();
 
 function closeImpressum() {
     impressumOverlay.classList.remove('open');
@@ -124,13 +120,7 @@ document.getElementById('openImpressum').addEventListener('click', (e) => {
     openImpressum();
 });
 
-document.getElementById('openPrivacyPolicy').addEventListener('click', (e) => {
-    e.preventDefault();
-    openImpressum('datenschutz');
-});
-
 impressumOverlay.querySelector('#closeImpressum').addEventListener('click', closeImpressum);
-impressumOverlay.querySelector('#closeImpressumFooter').addEventListener('click', closeImpressum);
 impressumOverlay.querySelector('#impressumBack').addEventListener('click', closeImpressum);
 
 // Impressum Hamburger Menu
@@ -150,10 +140,14 @@ function closeImpressumMenu() {
     impressumMobileOverlay.classList.remove('open');
 }
 
-impressumHamburger.addEventListener('click', openImpressumMenu);
-impressumMobileMenuClose.addEventListener('click', closeImpressumMenu);
-impressumMobileOverlay.addEventListener('click', closeImpressumMenu);
-impressumMobileLinks.forEach(link => link.addEventListener('click', () => {
-    closeImpressumMenu();
-    closeImpressum();
-}));
+function initImpressumMenu() {
+    impressumHamburger.addEventListener('click', openImpressumMenu);
+    impressumMobileMenuClose.addEventListener('click', closeImpressumMenu);
+    impressumMobileOverlay.addEventListener('click', closeImpressumMenu);
+    impressumMobileLinks.forEach(link => link.addEventListener('click', () => {
+        closeImpressumMenu();
+        closeImpressum();
+    }));
+}
+
+initImpressumMenu();
