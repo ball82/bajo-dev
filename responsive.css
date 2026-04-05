@@ -184,7 +184,7 @@
         padding: 0 20px;
     }
 
-     .skills-content {
+    .skills-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -229,10 +229,9 @@
         width: 100%;
      }
 
-     .scroll-top-btn {
+    .scroll-top-btn {
         display: none;
-     }
-
+    }
 
     .impressum-back {
         display: block;
@@ -240,8 +239,7 @@
 
     .impressum-nav {
         padding: 16px 16px;    
-        justify-content: space-around;
-        
+        justify-content: space-around;  
     }
 
     .impressum-nav .nav-links {
@@ -265,14 +263,21 @@
     }
 
     .impressum-page footer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 8px;
         padding: 12px 20px;
         text-align: center;
     }
 
+
+    .footer-left{
+        flex-direction: row;
+        align-items: center;
+    }
+
     .impressum-page .footer-left {
+        flex-direction: row;
         align-items: center;
     }
 
