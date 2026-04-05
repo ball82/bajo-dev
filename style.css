@@ -613,6 +613,13 @@ nav {
     flex: 1;
 }
 
+.contact-field .field-error {
+    font-size: 0.78rem;
+    color: #e07070;
+    min-height: 1.1rem;
+    margin: 0;
+}
+
 .contact-field label {
     font-size: 0.85rem;
     color: #a8bfce;
@@ -669,6 +676,11 @@ nav {
     font-family: 'Anta', sans-serif;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.contact-submit button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
 }
 
 /* Footer */
