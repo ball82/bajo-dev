@@ -165,7 +165,19 @@ body {
 
 .hero-links img:hover {
     cursor: pointer;
+    background-color: #1a2530;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,255,255,0.5);
+    border-radius: 20px;
 }
+
+.scroll-btn:hover{
+    background-color: #1a2530;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0,255,255,0.5);
+    border-radius: 20px;
+}
+
 
 /* Nav */
 nav {
@@ -174,9 +186,9 @@ nav {
     background-color: #a8bfce;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 16px 40px;
     flex-shrink: 0;
+    justify-content: space-evenly;
 }
 
 .nav-trigger {
@@ -353,6 +365,10 @@ nav {
     object-fit: contain;
 }
 
+.skill-item img:hover {
+    box-shadow: 0 0 30px rgba(0,255,255,0.5);
+}
+
 .skills-circle {
     width: 340px;
     height: 340px;
@@ -363,6 +379,11 @@ nav {
     justify-content: center;
     padding: 40px;
     flex-shrink: 0;
+}
+
+.skills-circle:hover {  
+    transform: scale(1.1);
+    background-color: rgba(13, 176, 176, 0.5)
 }
 
 .skills-circle p {
@@ -715,7 +736,7 @@ footer {
     background-color: #a8bfce;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 16px 60px;
 }
 

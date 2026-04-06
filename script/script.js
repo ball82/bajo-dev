@@ -51,24 +51,30 @@ syncHeroNav();
         let isDeleting = false;
         const el = document.getElementById('typewriter');
 
+        function typeForward(current) {
+            el.textContent = current.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === current.length) {
+                isDeleting = true;
+                setTimeout(type, 1800);
+                return true;
+            }
+            return false;
+        }
+
+        function typeBackward(current) {
+            el.textContent = current.substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+        }
+
         function type() {
             const current = phrases[phraseIndex];
-            if (!isDeleting) {
-                el.textContent = current.substring(0, charIndex + 1);
-                charIndex++;
-                if (charIndex === current.length) {
-                    isDeleting = true;
-                    setTimeout(type, 1800);
-                    return;
-                }
-            } else {
-                el.textContent = current.substring(0, charIndex - 1);
-                charIndex--;
-                if (charIndex === 0) {
-                    isDeleting = false;
-                    phraseIndex = (phraseIndex + 1) % phrases.length;
-                }
-            }
+            if (!isDeleting && typeForward(current)) return;
+            if (isDeleting) typeBackward(current);
             setTimeout(type, isDeleting ? 60 : 100);
         }
         type();

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script/script.js" defer></script>
     <script src="./translations .js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
     <link rel="icon" type="image/svg+xml" href="./icon/Favicon/bajo_dev_favicon.svg">
@@ -65,36 +66,36 @@
 
     <section class="why-me" id="whyMe">
 
-        <h2 class="section-title" data-i18n="section-why-me"></h2>
+        <h2 class="section-title" data-i18n="section-why-me" data-aos="fade-up"></h2>
 
         <div class="why-me-content">
-            <div class="why-me-left">
+            <div class="why-me-left" data-aos="fade-right" data-aos-delay="100">
                 <img src="./icon/location.svg" alt="Location" class="location-icon">
                 <p class="typewriter-text"><span class="typewriter-static" data-i18n="typewriter-static"></span><span class="typewriter" id="typewriter"></span></p>
             </div>
-            <article data-i18n="about-text"></article>
+            <article data-i18n="about-text" data-aos="fade-left" data-aos-delay="200"></article>
         </div>
 
     </section>
 
     <section class="skills" id="skills">
 
-        <h2 class="section-title" data-i18n="section-skills"></h2>
+        <h2 class="section-title" data-i18n="section-skills" data-aos="fade-up"></h2>
 
         <div class="skills-content">
             <div class="skills-grid">
-                <div class="skill-item"><img src="./icon/html.svg" alt="HTML">HTML</div>
-                <div class="skill-item"><img src="./icon/Vector.svg" alt="CSS">CSS</div>
-                <div class="skill-item"><img src="./icon/Javascript.svg" alt="JavaScript">JavaScript</div>
-                <div class="skill-item"><img src="./icon/typeScript.svg" alt="TypeScript">TypeScript</div>
-                <div class="skill-item"><img src="./icon/Api.svg" alt="API">API</div>
-                <div class="skill-item"><img src="./icon/angular.svg" alt="Angular">Angular</div>
-                <div class="skill-item skill-new-row"><img src="./icon/firebase.svg" alt="Firebase">Firebase</div>
-                <div class="skill-item"><img src="./icon/git.svg" alt="Git">Git / Github</div>
-                <div class="skill-item"><img src="./icon/scrum.svg" alt="Scrum">Scrum</div>
-                <div class="skill-item"><img src="./icon/jira.svg" alt="Jira">Jira</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="0"><img src="./icon/html.svg" alt="HTML">HTML</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="60"><img src="./icon/Vector.svg" alt="CSS">CSS</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="120"><img src="./icon/Javascript.svg" alt="JavaScript">JavaScript</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="180"><img src="./icon/typeScript.svg" alt="TypeScript">TypeScript</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="240"><img src="./icon/Api.svg" alt="API">API</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><img src="./icon/angular.svg" alt="Angular">Angular</div>
+                <div class="skill-item skill-new-row" data-aos="fade-up" data-aos-delay="360"><img src="./icon/firebase.svg" alt="Firebase">Firebase</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="420"><img src="./icon/git.svg" alt="Git">Git / Github</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="480"><img src="./icon/scrum.svg" alt="Scrum">Scrum</div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="540"><img src="./icon/jira.svg" alt="Jira">Jira</div>
             </div>
-            <div class="skills-circle">
+            <div class="skills-circle" data-aos="zoom-in" data-aos-delay="200">
                 <p data-i18n="skills-circle-text"></p>
             </div>
         </div>
@@ -103,9 +104,9 @@
 
     <section class="projects" id="projects">
 
-        <h2 class="section-title" data-i18n="section-projects"></h2>
+        <h2 class="section-title" data-i18n="section-projects" data-aos="fade-up"></h2>
 
-        <div class="project-tabs">
+        <div class="project-tabs" data-aos="fade-up" data-aos-delay="100">
             <button class="project-tab active" data-project="0">1. El Pollo Loco</button>
             <button class="project-tab" data-project="1">2. Join</button>
         </div>
@@ -113,7 +114,7 @@
         <div class="project-panels">
 
             <!-- El Pollo Loco -->
-            <div class="project-panel active">
+            <div class="project-panel active" data-aos="fade-up" data-aos-delay="150">
                 <div class="project-info">
                     <div class="project-point">
                         <span class="project-dot"></span>
@@ -203,12 +204,12 @@
 
     <section class="contact" id="contact">
 
-        <h2 class="section-title" data-i18n="contact-title"></h2>
+        <h2 class="section-title" data-i18n="contact-title" data-aos="fade-up"></h2>
 
         <a class="scroll-top-btn" href="#top">&#8593;</a>
 
         <div class="contact-content">
-            <div class="contact-left">
+            <div class="contact-left" data-aos="fade-right" data-aos-delay="100">
                 <p data-i18n="contact-text"></p>
                 <div class="contact-details">
                     <div class="contact-detail-item">
@@ -222,7 +223,7 @@
                 </div>
             </div>
 
-            <form class="contact-form" id="contactForm" action="mail.php" method="POST">
+            <form class="contact-form" id="contactForm" action="mail.php" method="POST" data-aos="fade-left" data-aos-delay="100">
                 <div class="contact-form-row">
                     <div class="contact-field">
                         <label data-i18n="label-name"></label>
@@ -254,7 +255,7 @@
 
     </section>
 
-    <footer>
+    <footer data-aos="fade-up">
         <div class="footer-left">
             <a href="#" id="openImpressum" data-i18n="footer-legal"></a>
             <span>© Joannis Ballos 2026</span>
@@ -288,6 +289,10 @@
     </div>
 
     <script src="./script/contact.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 700, easing: 'ease-out', once: false, offset: 60 });
+    </script>
 
 </body>
 </html>
