@@ -10,6 +10,10 @@ const translations = {
     'about-text': 'Ich bin Joannis Ballos, professioneller Fullstack Developer aus der Region Aarau. Durch meine langjährige Erfahrung in den Bereichen Bau, Industrie und Technik habe ich gelernt, wie unterschiedlich Probleme in der echten Welt aussehen und wie man sie wirklich löst. Dieses Wissen bringe ich heute direkt in meine Arbeit als Entwickler ein. Ich verstehe die Prozesse hinter den Projekten, nicht nur den Code davor.',
 
     'section-skills':    'Meine Skills',
+    'skills-frontend':   'Frontend',
+    'skills-backend':    'Backend & Daten',
+    'skills-tools':      'Tools & Workflow',
+    'skills-os':         'Betriebssysteme',
     'skills-circle-text': 'Ich arbeite mich von der ersten Zeile bis zum fertigen Produkt durch – egal ob Frontend, Backend oder beides. Wichtig ist mir dabei sauberer Code, der auch in sechs Monaten noch verständlich ist.',
 
     'section-projects': 'Meine Projekte',
@@ -104,6 +108,10 @@ const translations = {
     'about-text': 'I am Joannis Ballos, a professional full-stack developer from the Aarau region. Through years of experience in construction, industry, and engineering, I have learned to recognise how diverse real-world problems can be — and how to truly solve them. I bring this knowledge directly into my work as a developer. I understand the processes behind the projects, not just the code in front of them.',
 
     'section-skills':    'My Skills',
+    'skills-frontend':   'Frontend',
+    'skills-backend':    'Backend & Data',
+    'skills-tools':      'Tools & Workflow',
+    'skills-os':         'Operating Systems',
     'skills-circle-text': 'I work through a project from the first line to the finished product — frontend, backend, or both. What matters to me is clean code that\'s still readable six months down the line.',
 
     'section-projects': 'My Projects',
@@ -189,8 +197,8 @@ const translations = {
 };
 
 const typewriterPhrases = {
-  de: ['in Aarau wohnhaft..', 'Fullstack Developer..', 'leidenschaftlicher Coder..'],
-  en: ['based in Aarau..', 'Fullstack Developer..', 'a passionate coder..']
+  de: ['in Aarau wohnhaft..', 'Fullstack Developer..', 'mit Angular & Django unterwegs..', 'leidenschaftlicher Coder..'],
+  en: ['based in Aarau..', 'Fullstack Developer..', 'working with Angular & Django..', 'a passionate coder..']
 };
 
 function translateElements(lang) {

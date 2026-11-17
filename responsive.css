@@ -45,19 +45,14 @@
         width: 300px;
     }
     
-    .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    .skills-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
 
-    .skill-item img {
-    width: 4rem;
-    height: 4rem;
-    }
-    
-    .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+    .skills-groups {
+        width: 100%;
     }
 
     .skill-item img {
@@ -92,9 +87,14 @@
         text-align: center;
     }
 
-    .skills-content {
-        display: flex;
+    .skill-group {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .skill-group-title {
+        width: auto;
     }
 
 }
@@ -167,10 +167,22 @@
         text-align: center;
     }
 
-    .skills-content {
-        display: flex;
-        flex-direction: column;
+    .skills {
+        padding: 80px 20px;
+    }
+
+    .skill-group {
         align-items: center;
+    }
+
+    .skills-grid {
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    .skill-item {
+        width: 84px;
+        font-size: 0.8rem;
     }
 
     nav {
@@ -182,12 +194,6 @@
     }
     .why-me{
         padding: 0 20px;
-    }
-
-    .skills-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .skills-circle {
@@ -220,9 +226,28 @@
         padding: 15px 20px;
     }
 
+    .contact {
+        padding: 80px 20px;
+    }
+
+    .contact-content {
+        gap: 40px;
+    }
+
+    .contact-form,
+    .contact-left {
+        width: 100%;
+    }
+
     .contact-form-row {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        white-space: nowrap;
+        padding: 12px 22px;
     }
 
      .contact-form-row input, .contact-form-row textarea {
@@ -230,6 +255,13 @@
      }
 
     .scroll-top-btn {
+        right: 16px;
+        bottom: 16px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-header::before {
         display: none;
     }
 

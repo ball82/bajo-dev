@@ -12,6 +12,7 @@
     <title>Bajo Dev</title>
 </head>
 <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
         <div class="hero">
             <div class="hero-header">
                 <img class="portrait-photo" src="./img/IMG_2660.JPG" alt="">
@@ -36,6 +37,7 @@
                     <a href="#skills" data-i18n="nav-skills"></a>
                     <a href="#projects" data-i18n="nav-projects"></a>
                     <a href="#contact" data-i18n="nav-contact"></a>
+                    <span class="nav-indicator" aria-hidden="true"></span>
                 </div>
                 <div class="lang-switcher">
                     <span class="active">DE</span>
@@ -83,17 +85,48 @@
         <h2 class="section-title" data-i18n="section-skills" data-aos="fade-up"></h2>
 
         <div class="skills-content">
-            <div class="skills-grid">
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="0"><img src="./icon/html.svg" alt="HTML">HTML</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="60"><img src="./icon/Vector.svg" alt="CSS">CSS</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="120"><img src="./icon/Javascript.svg" alt="JavaScript">JavaScript</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="180"><img src="./icon/typeScript.svg" alt="TypeScript">TypeScript</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="240"><img src="./icon/Api.svg" alt="API">API</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><img src="./icon/angular.svg" alt="Angular">Angular</div>
-                <div class="skill-item skill-new-row" data-aos="fade-up" data-aos-delay="360"><img src="./icon/firebase.svg" alt="Firebase">Firebase</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="420"><img src="./icon/git.svg" alt="Git">Git / Github</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="480"><img src="./icon/scrum.svg" alt="Scrum">Scrum</div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="540"><img src="./icon/jira.svg" alt="Jira">Jira</div>
+            <div class="skills-groups">
+
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="0">
+                    <h3 class="skill-group-title" data-i18n="skills-frontend"></h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="./icon/html.svg" alt="HTML"><span>HTML</span></div>
+                        <div class="skill-item"><img src="./icon/Vector.svg" alt="CSS"><span>CSS</span></div>
+                        <div class="skill-item"><img src="./icon/Javascript.svg" alt="JavaScript"><span>JavaScript</span></div>
+                        <div class="skill-item"><img src="./icon/typeScript.svg" alt="TypeScript"><span>TypeScript</span></div>
+                        <div class="skill-item"><img src="./icon/angular.svg" alt="Angular"><span>Angular</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="skill-group-title" data-i18n="skills-backend"></h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="./icon/python.svg" alt="Python"><span>Python</span></div>
+                        <div class="skill-item"><img src="./icon/django.svg" alt="Django"><span>Django</span></div>
+                        <div class="skill-item"><img src="./icon/Api.svg" alt="API"><span>REST API</span></div>
+                        <div class="skill-item"><img src="./icon/firebase.svg" alt="Firebase"><span>Firebase</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="skill-group-title" data-i18n="skills-tools"></h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="./icon/git.svg" alt="Git"><span>Git/GitHub</span></div>
+                        <div class="skill-item"><img src="./icon/n8n.svg" alt="n8n"><span>n8n</span></div>
+                        <div class="skill-item"><img src="./icon/scrum.svg" alt="Scrum"><span>Scrum</span></div>
+                        <div class="skill-item"><img src="./icon/jira.svg" alt="Jira"><span>Jira</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="skill-group-title" data-i18n="skills-os"></h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="./icon/macos.svg" alt="macOS"><span>macOS</span></div>
+                        <div class="skill-item"><img src="./icon/windows.svg" alt="Windows"><span>Windows</span></div>
+                        <div class="skill-item"><img src="./icon/linux.svg" alt="Linux"><span>Linux</span></div>
+                    </div>
+                </div>
+
             </div>
             <div class="skills-circle" data-aos="zoom-in" data-aos-delay="200">
                 <p data-i18n="skills-circle-text"></p>
@@ -114,7 +147,7 @@
         <div class="project-panels">
 
             <!-- El Pollo Loco -->
-            <div class="project-panel active" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-panel active" data-aos="fade-up" data-aos-delay="150" id="panel0">
                 <div class="project-info">
                     <div class="project-point">
                         <span class="project-dot"></span>
@@ -142,12 +175,12 @@
                     <div class="project-tech">
                         <p>Technologies</p>
                         <div class="project-tech-icons">
-                            <img src="./icon/html.svg" alt="HTML">
-                            <img src="./icon/Vector.svg" alt="CSS">
-                            <img src="./icon/Javascript.svg" alt="JavaScript">
+                            <img src="./icon/html.svg" alt="HTML" title="HTML">
+                            <img src="./icon/Vector.svg" alt="CSS" title="CSS">
+                            <img src="./icon/Javascript.svg" alt="JavaScript" title="JavaScript">
                         </div>
                     </div>
-                    <div class="project-screenshot"><img src="./icon/poject_img/elpolloloco_smal.jpg" alt="El Pollo Loco Screenshot"></div>
+                    <a class="project-screenshot" target="_blank" rel="noopener noreferrer" href="https://elpolloloco.bajo-dev.ch"><img src="./icon/poject_img/elpolloloco_smal.jpg" alt="El Pollo Loco Screenshot"></a>
                     <div class="project-btns">
                         <a class="btn-primary" target="_blank" href="https://elpolloloco.bajo-dev.ch">Live Test</a>
                         <a class="btn-secondary" target="_blank" href="https://github.com/ball82/El-Pollo-Loco">GitHub</a>
@@ -156,7 +189,7 @@
             </div>
 
             <!-- Join -->
-            <div class="project-panel">
+            <div class="project-panel" id="panel1">
                 <div class="project-info">
                     <div class="project-point">
                         <span class="project-dot"></span>
@@ -184,13 +217,13 @@
                     <div class="project-tech">
                         <p>Technologies</p>
                         <div class="project-tech-icons">
-                            <img src="./icon/html.svg" alt="HTML">
-                            <img src="./icon/Vector.svg" alt="HTML">
-                            <img src="./icon/Javascript.svg" alt="JavaScript">
-                            <img src="./icon/firebase.svg" alt="Firebase">
+                            <img src="./icon/html.svg" alt="HTML" title="HTML">
+                            <img src="./icon/Vector.svg" alt="CSS" title="CSS">
+                            <img src="./icon/Javascript.svg" alt="JavaScript" title="JavaScript">
+                            <img src="./icon/firebase.svg" alt="Firebase" title="Firebase">
                         </div>
                     </div>
-                    <div class="project-screenshot"><img src="./icon/poject_img/join_smal.jpg" alt="Join"></div>
+                    <a class="project-screenshot" target="_blank" rel="noopener noreferrer" href="https://join.bajo-dev.ch"><img src="./icon/poject_img/join_smal.jpg" alt="Join Screenshot"></a>
                     <div class="project-btns">
                         <a class="btn-primary" target="_blank" href="https://join.bajo-dev.ch">Live Test</a>
                         <a class="btn-secondary" target="_blank" href="https://github.com/ball82/Join">GitHub</a>
@@ -205,8 +238,6 @@
     <section class="contact" id="contact">
 
         <h2 class="section-title" data-i18n="contact-title" data-aos="fade-up"></h2>
-
-        <a class="scroll-top-btn" href="#top">&#8593;</a>
 
         <div class="contact-content">
             <div class="contact-left" data-aos="fade-right" data-aos-delay="100">
@@ -255,6 +286,8 @@
 
     </section>
 
+    <a class="scroll-top-btn" href="#top" aria-label="Nach oben">&#8593;</a>
+
     <footer data-aos="fade-up">
         <div class="footer-left">
             <a href="#" id="openImpressum" data-i18n="footer-legal"></a>
@@ -291,7 +324,7 @@
     <script src="./script/contact.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 700, easing: 'ease-out', once: false, offset: 60 });
+        AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60, disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches });
     </script>
 
 </body>
