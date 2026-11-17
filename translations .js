@@ -14,6 +14,7 @@ const translations = {
     'skills-backend':    'Backend & Daten',
     'skills-tools':      'Tools & Workflow',
     'skills-os':         'Betriebssysteme',
+    'skills-ai':         'KI-Tools',
     'skills-circle-text': 'Ich arbeite mich von der ersten Zeile bis zum fertigen Produkt durch – egal ob Frontend, Backend oder beides. Wichtig ist mir dabei sauberer Code, der auch in sechs Monaten noch verständlich ist.',
 
     'section-projects': 'Meine Projekte',
@@ -112,6 +113,7 @@ const translations = {
     'skills-backend':    'Backend & Data',
     'skills-tools':      'Tools & Workflow',
     'skills-os':         'Operating Systems',
+    'skills-ai':         'AI Tools',
     'skills-circle-text': 'I work through a project from the first line to the finished product — frontend, backend, or both. What matters to me is clean code that\'s still readable six months down the line.',
 
     'section-projects': 'My Projects',
