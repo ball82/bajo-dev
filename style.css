@@ -119,8 +119,8 @@ body {
     height: 700px;
     border-radius: 50%;
     object-fit: cover;
-    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 0.770) 60%, transparent 100%);
-    mask-image: radial-gradient(circle, rgba(0, 0, 0, 0.770) 60%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.9) 55%, rgba(0, 0, 0, 0.5) 80%, transparent 100%);
+    mask-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.9) 55%, rgba(0, 0, 0, 0.5) 80%, transparent 100%);
 }
 
 .hero-text {
@@ -1228,7 +1228,12 @@ footer {
 .portrait-photo {
     transform: translate(var(--px, 0px), var(--py, 0px));
     transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
-    animation: hero-in 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: portrait-in 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes portrait-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .hero-text > * {

@@ -1,1 +1,5 @@
 .claude/
+
+# Lokale Screenshots nicht hochladen
+Screenshot*.png
+*.png.bak
